@@ -1,0 +1,24 @@
+body{
+    background-color: #98D8EF;
+}
+
+/* Nah di sini kita bisa langsung mengenai banyak elemen sekaligus */
+h1, h2, h3{
+    color: #FBFBFB;
+    background-color: black;
+    font-size: medium;
+}
+
+span {
+    color: white;
+}
+
+/* Ini adalah cara memanggil id */
+#list2 {
+    color: rgb(114, 64, 2);
+}
+
+/* Sementara ini cara memanggil class */
+.mark {
+    background-color: aquamarine;
+}

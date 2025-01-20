@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        /* Nah ini juga bisa diawali dengan ID atau  Class dulu*/
+        .jokes > p{
+            color: blue;
+            font-size: larger;
+        }
+        .jokes > p:hover{
+            cursor: pointer;
+            color: aqua;
+            text-decoration: underline;
+        }
+        section button{
+            background-color: brown;
+        }
+        /* Untuk mewarnai button setelah angker */
+        a + button{
+            background-color: gray;
+        }
+        /* secara spesifik mewarnai input dengan tipe tertentu */
+        input[type="text"]{
+            color: rebeccapurple;
+        }
+        /* hover ini akan menjadikan kursor kita sebagai pointer saat di arahkan */
+        button:hover{
+            background-color: rgb(255, 68, 0);
+        }
+        /* Ini adalah untuk memilih sati dari beberapa section demi melakuakn perlakuan khusus */
+        section:hover:nth-of-type(2n){
+            background-color: gray;
+        }
+        /* Ini akan memberikan efek seolah-olah saat menggeser kursor menunya akan berpindah */
+        section:hover{
+            background-color: yellow;
+        }
+
+        /* Mengatur style pada huruf pertama */
+        section h3::first-letter{
+            font-size: xx-large;
+        }
+        /*  Lanjut untuk mengatur style pada baris pertama */
+        section p::first-line{
+            color: red;
+        }
+        /* nah ini akan sangat berguna untuk membuat sebuah formulir */
+        section h3::after{
+            content: '*';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Kumpulan Jokes Bapack-Bapack</h1>
+    <input type="text" placeholder="search" value="">
+    <input type="password" name="" id="">
+    <button>search</button>
+    <hr>
+    <section class="jokes">
+        <h3>Udang kalau dari cirebon namanya udang rebon kalau dari Inggris? Udang Robin</h3>
+        <p>Dipublish oleh: <span>John</span></p>
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente sequi exercitationem reiciendis ut quidem modi, quia beatae maxime ab officia numquam fugiat quas, quaerat quam incidunt doloremque delectus molestiae.</p>
+        </div>
+        <button>Vote +</button>
+    </section>
+    <hr>
+    <section class="jokes">
+        <h3>Alat masak apa yang suka kesel? Puan cii...!!</h3>
+        <p>Dipublish oleh: <span>John</span></p>
+        <button>Vote +</button>
+    </section>
+    <hr>
+    <section class="jokes">
+        <h3>Gula, gula apa yang bukan gula merah? Gula Aren't</h3>
+        <p>Dipublish oleh: <span>John</span></p>
+        <button>Vote +</button>
+    </section>
+    <section class="jokes">
+        <h3>Udang kalau dari cirebon namanya udang rebon kalau dari Inggris? Udang Robin</h3>
+        <p>Dipublish oleh: <span>John</span></p>
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente sequi exercitationem reiciendis ut quidem modi, quia beatae maxime ab officia numquam fugiat quas, quaerat quam incidunt doloremque delectus molestiae.</p>
+        </div>
+        <button>Vote +</button>
+    </section>
+    <hr>
+    <section class="jokes">
+        <h3>Alat masak apa yang suka kesel? Puan cii...!!</h3>
+        <p>Dipublish oleh: <span>John</span></p>
+        <button>Vote +</button>
+    </section>
+    <hr>
+    <section class="jokes">
+        <h3>Gula, gula apa yang bukan gula merah? Gula Aren't</h3>
+        <p>Dipublish oleh: <span>John</span></p>
+        <button>Vote +</button>
+    </section>
+    <p>Joke ini semata-mata hanya ingin menghibur bapakm pribadi saja, bukan untuk para pendengar</p>
+    <a href="#">Link</a>
+    <button>Kirim</button>
+</body>
+</html>
