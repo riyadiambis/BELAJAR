@@ -1,0 +1,21 @@
+h1{
+    background-color: blanchedalmond;
+    border : 2px solid black;
+    /* Mengatur lebar elemen */
+    width: 500px;
+    /* Menambahkan ruang dalam di semua sisi */
+    padding: 100px;
+    /* Menambahkan ruang semua sisi luar */
+    margin: 20px;
+    /* Mengubah jenis tampilan */
+    display: inline-block;
+    /* terdapat elemen none pada display jika digunakan akan menghilangkan elemen dari flow dokumen */
+}
+
+span{
+    background-color: blueviolet;
+    border: solid 3px black;
+    width: 500px;
+    padding: 10px;
+    margin: 50px;
+}
